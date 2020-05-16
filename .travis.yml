@@ -5,4 +5,4 @@ addons:
       secure: "eNsKYCc1aedD+kHnRi0rWwOC8ukZlZc3USZVcbzvQcmlcuaniCwwYj4ofFLG5JUiBW2I7f8gaL6BE1bCRTCmsBDZ9PlmXll0FC/P3hMkUYDFG3pzkvMfqWKviLHY03war6rFVwxRRRBQ2zCU/Pb9GykcLUeETBe/wo4PjNTCPIYSkQNosswhA92syGgZsmIB8vUHKaI6BE1sjJqv/voTs/Seys9Ic248kyKb91MDFaXkqg3ZZlpjjpjGkjmAGTFY8kT19AM5uH6jwcGCSmFfrPP1AjpfFzI2oP/VUl+Hn6zHvzWucGpI1QOe2QP91TyXU2c4vq/BvKVmGMivJEja1Oe1UaWlkgVFxVL7X4bRkjLpuj7NE+IYYWNfLipNLGmK9VzFAY9T6Z3BmMwsnbqFTrXLcOFN5T1otD7mKD7hLkTkwK+eRxf+weIxDixNOoaceRDAAmzfamNubRWtSbSMHi5MCQq6SHI2yms+eLrTipcSK9L27b1SDh/aLVHxo/s8PhKN9Tn6as9jlUZxZdRmSVVKivxJ6M72uYWam387DgMJXlktsFxYPyGvMgJrt1b6u2iRpDp+KHCB4sp0R6CQb776zlW2tEAClhmLWLuzNQt9GLJfwvA8w8NFJMXTQYot/GTz2Z9N01+uz0zLtuMI+I3mXd8SsqYce0XQpmjpws4="
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=Zrips_Residence5
